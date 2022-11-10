@@ -17,7 +17,7 @@ class ContactServiceProvider extends ServiceProvider{
             __DIR__.'/Models/contact.php' => app_path('/Models/Contact.php'),
             __DIR__.'/Http/Controllers/ContactController.php' => app_path('/Http/Controllers/ContactController.php'),
             __DIR__.'/Mail' => app_path('/Mail')
-        ],["contact"]); 
+        ],["laravel-assets"]); 
     }
     public function register()
     {
