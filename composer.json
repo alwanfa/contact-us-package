@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Wandev\\COntact\\ContactServiceProvider"
+                "Wandev\\Contact\\ContactServiceProvider"
             ],
             "aliases": {
                 "Debugbar": "Barryvdh\\Debugbar\\Facade"
