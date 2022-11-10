@@ -1,0 +1,19 @@
+{
+    "name": "wandev/contact",
+    "description": "Package untuk membuat form pesan kepada admin suatu website",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wandev\\Contact\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WanDev",
+            "email": "71076451+alwanfa@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
