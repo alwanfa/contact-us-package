@@ -22,9 +22,9 @@
         }
     },
     "scripts": {
-        "post-autoload-dump": [
+        "post-package-install": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+            "@php artisan vendor:publish --tag=contact --ansi --force"
         ]
     }
 }
