@@ -12,7 +12,7 @@ class ContactServiceProvider extends ServiceProvider{
         $this->publishes([
             __DIR__.'/config/contact.php' => config_path('contact.php'),
             __DIR__.'/public/contact.css' => public_path('vendor/contact/contact.css'),
-            __DIR__.'/views' => resource_path('views/contact'),
+            __DIR__.'/views' => resource_path('views/vendor/contact'),
             __DIR__.'/database/migrations/2022_10_27_094034_create_contacts_table.php' => database_path('/migrations/2022_10_27_094034_create_contacts_table.php'),
             __DIR__.'/Models/contact.php' => app_path('/Models/Contact.php'),
             __DIR__.'/Http/Controllers/ContactController.php' => app_path('/Http/Controllers/ContactController.php'),
