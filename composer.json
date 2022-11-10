@@ -23,7 +23,9 @@
     },
     "scripts": {
         "post-package-install": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan vendor:publish --tag=contact --ansi --force"
+        ],
+        "post-package-update": [
             "@php artisan vendor:publish --tag=contact --ansi --force"
         ]
     }
