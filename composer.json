@@ -23,5 +23,11 @@
                 "Debugbar": "Barryvdh\\Debugbar\\Facade"
             }
         }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan vendor:publish --tag=contact --force"
+        ]
     }
 }
