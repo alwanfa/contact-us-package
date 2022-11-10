@@ -24,7 +24,7 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan vendor:publish --tag=contact --force"
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ]
     }
 }
