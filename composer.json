@@ -8,12 +8,20 @@
             "Wandev\\Contact\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "WanDev",
-            "email": "71076451+alwanfa@users.noreply.github.com"
-        }
-    ],
+    "authors": [{
+        "name": "WanDev",
+        "email": "71076451+alwanfa@users.noreply.github.com"
+    }],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wandev\\COntact\\ContactServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            }
+        }
+    }
 }
