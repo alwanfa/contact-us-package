@@ -1,5 +1,5 @@
 <?php 
-namespace Wandev\Contact\factories;
+namespace Wandev\Contact\database\factories;
 
 use Illuminate\Support\Facades\Mail;
 use Wandev\Contact\Mail\Email;

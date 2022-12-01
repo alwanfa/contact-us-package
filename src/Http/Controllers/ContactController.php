@@ -2,7 +2,7 @@
 
 namespace Wandev\Contact\Http\Controllers;
 
-use Wandev\Contact\factory\EmailFactory;
+use Wandev\Contact\database\factories\EmailFactory;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Mail;
