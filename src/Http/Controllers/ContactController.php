@@ -2,6 +2,7 @@
 
 namespace Wandev\Contact\Http\Controllers;
 
+use Wandev\Contact\factory\EmailFactory;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Mail;
@@ -18,7 +19,8 @@ class ContactController extends Controller
     {
         $data = ['name'=>$req->name,'email'=>$req->email,'subject'=>$req->subject,'message'=>$req->message];
         Contact::create($data);
-        Mail::to(config('contact.send_email_to'))->send(new MailContact($req->message,$req->subject, $req->name, $req->email));
+        $emailFactory = new EmailFactory() ;
+        $emailFactory->createMail($req->message,$req->subject,$req->name,$req->email);
         return redirect('contact');
     }
     
