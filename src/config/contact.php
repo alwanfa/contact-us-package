@@ -1,4 +1,4 @@
 <?php
 return[
-    'send_email_to'=>"isardidamairaga@student.ub.ac.id"
+    'send_email_to'=>"email@example.com"
 ];
