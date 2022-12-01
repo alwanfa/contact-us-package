@@ -12,11 +12,12 @@ class ContactServiceProvider extends ServiceProvider{
             __DIR__.'/config/contact.php' => config_path('contact.php'),
             __DIR__.'/public/contact.css' => public_path('vendor/contact/contact.css'),
             __DIR__.'/views' => resource_path('views/vendor/contact'),
+            __DIR__.'/factory'=>database_path('/factories/wandev'),
             __DIR__.'/database/migrations/2022_10_27_094034_create_contacts_table.php' => database_path('/migrations/2022_10_27_094034_create_contacts_table.php'),
             __DIR__.'/Models/contact.php' => app_path('/Models/Contact.php'),
             __DIR__.'/Http/Controllers/ContactController.php' => app_path('/Http/Controllers/ContactController.php'),
             __DIR__.'/Mail' => app_path('/Mail')
-        ],["contact"]); 
+        ],["laravel-assets"]); 
     }
     public function register()
     {
